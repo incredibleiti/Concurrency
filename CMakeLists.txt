@@ -12,7 +12,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Threads REQUIRED)
 
 # 5. Add your executable (target name followed by source files)
-add_executable(main src/main.cpp)
+add_executable(main 
+src/main.cpp
+)
 
 # 6. Link the thread library to your executable
 target_link_libraries(main PRIVATE Threads::Threads)
